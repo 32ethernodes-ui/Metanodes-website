@@ -1,5 +1,5 @@
 import React from "react";
-
+import sc from '../assets/sc.svg' 
 export default function Hero() {
   return (
     <section className="hero-section relative bg-black text-white w-full overflow-hidden h-screen">
@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="relative space-y-12">
             <div className="absolute top-0 right-0 flex items-center gap-2">
               <span className="text-sm">Secure & Safe</span>
-              <img src="/src/assets/sc.svg" alt="secure" />
+              <img src={sc} alt="secure" />
             </div>
 
             <div className="absolute top-32 left-12 flex items-center gap-2">
