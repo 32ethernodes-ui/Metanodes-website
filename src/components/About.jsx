@@ -1,6 +1,6 @@
 import React from "react";
 import { User, BarChart3, ShieldCheck } from "lucide-react";
-
+import img1 from '../assets/about-img.png'
 export default function About() {
   return (
     <section className="about-section bg-[#000] text-white py-16 px-6">
@@ -43,7 +43,7 @@ export default function About() {
         {/* Middle Graphic */}
         <div className="hidden lg:block">
           <div className=" flex items-center justify-center relative">
-            <img src="/src/assets/about-img.png"/>
+            <img src={img1 } />
             <img />
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Shield } from "lucide-react";
-
+import img1 from '../assets/vision-img.png'
 export default function Vision() {
   return (
     <section className="vision-section bg-[#000] text-white py-5 px-6">
@@ -9,7 +9,7 @@ export default function Vision() {
         <div className="relative flex justify-center items-center w-full lg:w-1/2">
           {/* Big Circle */}
           <div className="w-100 h-100">
-          <img src="/src/assets/vision-img.png" alt="vision image"/>
+          <img src={img1} alt="vision image"/>
             {/* <Shield className="w-16 h-16 text-white" /> */}
 
             {/* Small Circle 1 */}
