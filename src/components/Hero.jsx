@@ -70,7 +70,7 @@ export default function Hero() {
           background-image: url('/src/assets/blockchain_hero_bg.png');
           background-repeat: no-repeat;
           background-size: cover;
-          background-position: center;
+          background-position: bottom;
           opacity: 0.3;
           z-index: 0;
         }

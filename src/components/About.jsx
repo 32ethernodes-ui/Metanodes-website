@@ -3,11 +3,15 @@ import { User, BarChart3, ShieldCheck } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="about-section bg-[#000] text-white py-16 px-6">
+    <section
+      id="about" // 👈 added so menu can scroll here
+      className="about-section bg-[#000] text-white py-16 px-6 scroll-smooth"
+    >
       <div className="text-center mb-12">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">About Meta Nodes →</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">About Meta Nodes →</h1>
         <p className="text-gray-300">
-          AT Meta Nodes, we are helping people to secure there future and wealth with the revolutionary methods of making money.
+          AT Meta Nodes, we are helping people to secure their future and wealth
+          with the revolutionary methods of making money.
         </p>
       </div>
 
@@ -18,22 +22,20 @@ export default function About() {
             <div className="about-hexagon bg-[#1c2230] p-4 flex items-center justify-center">
               <User className="text-blue-400 w-6 h-6" />
             </div>
-            <h3 className="ml-4 text-2xl font-semibold"> Opportunity</h3>
+            <h3 className="ml-4 text-2xl font-semibold">Opportunity</h3>
           </div>
 
           <ul className="space-y-4">
             {[
               {
-                title: "We are creating a opportunity that will change your life entirely. And for each individual person would value by joining us you will get what you need them planning for three most important goals.",
-                
+                title:
+                  "We are creating an opportunity that will change your life entirely. For each individual person, joining us means achieving the three most important goals.",
               },
-             
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <ShieldCheck className="text-blue-400 w-5 h-5 mt-1" />
                 <div>
                   <p className="font-semibold">{item.title}</p>
-                  <p className="text-gray-400 text-sm">{item.desc}</p>
                 </div>
               </li>
             ))}
@@ -42,9 +44,8 @@ export default function About() {
 
         {/* Middle Graphic */}
         <div className="hidden lg:block">
-          <div className=" flex items-center justify-center relative">
-            <img src="/src/assets/about-img.png"/>
-            <img />
+          <div className="flex items-center justify-center relative">
+            <img src="/src/assets/about-img.png" alt="About Meta Nodes" />
           </div>
         </div>
 
@@ -60,16 +61,14 @@ export default function About() {
           <ul className="space-y-4">
             {[
               {
-                title: "Our purpose is to help more and more person (people) experience financial well being with clients ranging from govt foundation and other large institutions to those investing on behalf of individuals.",
-                
+                title:
+                  "Our purpose is to help more and more people experience financial well-being, from large institutions to individuals investing for their future.",
               },
-             
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <ShieldCheck className="text-blue-400 w-5 h-5 mt-1" />
                 <div>
                   <p className="font-semibold">{item.title}</p>
-                  <p className="text-gray-400 text-sm">{item.desc}</p>
                 </div>
               </li>
             ))}
@@ -79,6 +78,9 @@ export default function About() {
 
       {/* Scoped CSS */}
       <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
         .about-hexagon {
           clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
         }

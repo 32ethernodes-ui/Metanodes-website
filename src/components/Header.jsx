@@ -14,11 +14,11 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-10 font-bold text-xl">
-          <a href="#" className="hover:text-blue-400">Home</a>
-          <a href="#" className="hover:text-blue-400">About Us</a>
-          <a href="#" className="hover:text-blue-400">Our Vision</a>
-          <a href="#" className="hover:text-blue-400">Roadmap</a>
-          <a href="#" className="hover:text-blue-400">Contact</a>
+          <a href="/" className="hover:text-blue-400">Home</a>
+          <a href="#about" className="hover:text-blue-400">About Us</a>
+          <a href="#vision" className="hover:text-blue-400">Our Vision</a>
+          <a href="#roadmap" className="hover:text-blue-400">Roadmap</a>
+          <a href="#footer" className="hover:text-blue-400">Contact</a>
         </nav>
 
         {/* Actions */}
@@ -27,10 +27,10 @@ export default function Header() {
             <Globe size={18} />
             <span>EN</span>
           </div>
-          <button className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 border-2 hover:border-blue-400 px-4 py-2 rounded-md">
+          <a href="https://metanodes-admin.vercel.app/" className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 border-2 hover:border-blue-400 px-4 py-2 rounded-md">
             <User size={18} className="text-blue-400" />
             <span>LOGIN</span>
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -46,10 +46,9 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-black text-white space-y-4 px-6 pb-6">
           <a href="#" className="block hover:text-cyan-400">Home</a>
-          <a href="#" className="block hover:text-cyan-400">Feature</a>
-          <a href="#" className="block hover:text-cyan-400">Team</a>
+          <a href="#" className="block hover:text-cyan-400">About Us</a>
+          <a href="#" className="block hover:text-cyan-400">Our Vision</a>
           <a href="#" className="block hover:text-cyan-400">Roadmap</a>
-          <a href="#" className="block hover:text-cyan-400">Blog</a>
           <a href="#" className="block hover:text-cyan-400">Contact</a>
 
           {/* Actions Mobile */}
@@ -57,10 +56,11 @@ export default function Header() {
             <Globe size={18} />
             <span>EN</span>
           </div>
-          <button className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-md w-full justify-center">
+          <a href="https://metanodes-admin.vercel.app/" className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-md w-full justify-center">
             <User size={18} className="text-cyan-400" />
             <span>LOGIN</span>
-          </button>
+          </a>
+
         </div>
       )}
     </header>

@@ -12,7 +12,10 @@ const roadmap = [
 
 export default function Roadmap() {
   return (
-    <section className="relative bg-[#000] text-white py-20 px-6 overflow-hidden">
+    <section
+      id="roadmap" // 👈 added for smooth scroll target
+      className="relative bg-[#000] text-white py-20 px-6 overflow-hidden scroll-smooth"
+    >
       <div className="container mx-auto relative">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
           Roadmap
@@ -20,7 +23,7 @@ export default function Roadmap() {
 
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-y-16">
           {/* Center shape */}
-          <div className=" lg:block absolute left-1/2 top-0 bottom-0 w-[120px] -translate-x-1/2 z-0 flex justify-center">
+          <div className=" lg:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 z-0 flex justify-center">
             <img
               src="/src/assets/rmm_shape.png"
               alt="center line"
@@ -51,6 +54,9 @@ export default function Roadmap() {
 
       {/* Custom CSS for angled card corners */}
       <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
         .custom-card {
           clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
         }

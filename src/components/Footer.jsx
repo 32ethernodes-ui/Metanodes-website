@@ -1,9 +1,18 @@
 import React from "react";
-import { FaDiscord, FaFacebookF, FaLinkedinIn, FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTelegramPlane,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0b0f1a] text-white py-12 px-6">
+    <footer
+      id="footer" // 👈 added so we can scroll here from menu
+      className="bg-[#0b0f1a] text-white py-12 px-6 scroll-smooth"
+    >
       {/* Top Subscribe Section */}
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 border-b border-gray-700 pb-10">
         <h2 className="text-2xl md:text-3xl font-semibold text-center lg:text-left">
@@ -94,6 +103,13 @@ export default function Footer() {
           </a>
         </div>
       </div>
+
+      {/* Smooth Scroll */}
+      <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
     </footer>
   );
 }
