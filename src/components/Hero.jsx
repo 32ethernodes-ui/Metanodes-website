@@ -1,5 +1,6 @@
 import React from "react";
-
+import sc from '../assets/sc.svg' 
+import hero from '../assets/blockchain_hero_bg.png'
 export default function Hero() {
   return (
     <section className="hero-section relative bg-black text-white w-full overflow-hidden h-screen">
@@ -36,22 +37,22 @@ export default function Hero() {
           <div className="relative space-y-12">
             <div className="absolute top-0 right-0 flex items-center gap-2">
               <span className="text-sm">Secure & Safe</span>
-              <img src="/src/assets/sc.svg" alt="secure" />
+              <img src={sc} alt="secure" />
             </div>
 
             <div className="absolute top-32 left-12 flex items-center gap-2">
               <span className="text-sm">Tested</span>
-              <img src="/src/assets/sc.svg" alt="tested" />
+              <img src={sc} alt="tested" />
             </div>
 
             <div className="absolute bottom-20 left-40 flex items-center gap-2">
               <span className="text-sm">Optimized</span>
-              <img src="/src/assets/sc.svg" alt="optimized" />
+              <img src={sc} alt="optimized" />
             </div>
 
             <div className="absolute top-40 right-20 flex items-center gap-2">
               <span className="text-sm">Trustworthy</span>
-              <img src="/src/assets/sc.svg" alt="trustworthy" />
+              <img src={sc} alt="trustworthy" />
             </div>
           </div>
         </div>
@@ -67,7 +68,7 @@ export default function Hero() {
           width: 100%;
           height: 100%;
           background: radial-gradient(circle at center, rgba(0, 255, 200, 0.1), transparent 70%);
-          background-image: url('/src/assets/blockchain_hero_bg.png');
+          background-image: url('${hero}');
           background-repeat: no-repeat;
           background-size: cover;
           background-position: bottom;

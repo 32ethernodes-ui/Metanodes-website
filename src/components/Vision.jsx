@@ -1,6 +1,6 @@
 import React from "react";
 import { Shield } from "lucide-react";
-
+import img1 from '../assets/vision-img.png'
 export default function Vision() {
   return (
     <section
@@ -14,11 +14,12 @@ export default function Vision() {
           <div className="w-100 h-100 relative">
             <img src="/src/assets/vision-img.png" alt="vision image" />
 
-            {/* Small Circle 1 */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-r from-green-400 to-blue-500 animate-orbit"></div>
+              {/* Small Circle 1 */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-r from-green-400 to-blue-500 animate-orbit"></div>
 
-            {/* Small Circle 2 */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 animate-orbit-reverse"></div>
+              {/* Small Circle 2 */}
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 animate-orbit-reverse"></div>
+            </div>
           </div>
         </div>
 

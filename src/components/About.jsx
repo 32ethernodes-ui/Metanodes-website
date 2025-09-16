@@ -1,6 +1,6 @@
 import React from "react";
 import { User, BarChart3, ShieldCheck } from "lucide-react";
-
+import img1 from '../assets/about-img.png'
 export default function About() {
   return (
     <section

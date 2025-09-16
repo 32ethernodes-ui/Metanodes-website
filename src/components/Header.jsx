@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Globe, User } from "lucide-react";
-
+import logo from '../assets/metanodes_logo.svg'
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-        <a href="/"> <img src="/src/assets/metanodes_logo.svg" /></a>
+        <a href="/"> <img src={logo} /></a>
         </div>
 
         {/* Desktop Menu */}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import img1 from '../assets/rmm_shape.png'
 const roadmap = [
   { stage: "Node Running" },
   { stage: "Land Development" },
@@ -25,7 +25,7 @@ export default function Roadmap() {
           {/* Center shape */}
           <div className=" lg:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 z-0 flex justify-center">
             <img
-              src="/src/assets/rmm_shape.png"
+              src={img1}
               alt="center line"
               className="h-full object-contain"
             />
