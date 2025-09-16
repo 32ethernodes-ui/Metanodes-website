@@ -2,7 +2,7 @@ import React from "react";
 import { Shield } from "lucide-react";
 import img1 from '../assets/vision-img.png'
 export default function Vision() {
-  return (
+  return (  
     <section
       id="vision" // 👈 added for smooth scroll target
       className="vision-section bg-[#000] text-white py-5 px-6 scroll-smooth"
