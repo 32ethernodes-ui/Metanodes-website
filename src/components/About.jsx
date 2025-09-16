@@ -1,6 +1,6 @@
 import React from "react";
 import { User, BarChart3, ShieldCheck } from "lucide-react";
-import img1 from '../assets/about-img.png'
+import img1 from '../assets/about_img.png'
 export default function About() {
   return (
     <section
@@ -45,7 +45,7 @@ export default function About() {
         {/* Middle Graphic */}
         <div className="hidden lg:block">
           <div className="flex items-center justify-center relative">
-            <img src="/src/assets/about_img.png" alt="About Meta Nodes" />
+            <img src={img1} alt="About Meta Nodes" />
           </div>
         </div>
 
