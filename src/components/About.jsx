@@ -45,7 +45,7 @@ export default function About() {
         {/* Middle Graphic */}
         <div className="hidden lg:block">
           <div className="flex items-center justify-center relative">
-            <img src="/src/assets/about-img.png" alt="About Meta Nodes" />
+            <img src="/src/assets/about_img.png" alt="About Meta Nodes" />
           </div>
         </div>
 

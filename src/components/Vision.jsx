@@ -12,7 +12,7 @@ export default function Vision() {
         <div className="relative flex justify-center items-center w-full lg:w-1/2">
           {/* Big Circle */}
           <div className="w-100 h-100 relative">
-            <img src="/src/assets/vision-img.png" alt="vision image" />
+            <img src="/src/assets/vision_img.png" alt="vision image" />
 
               {/* Small Circle 1 */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-r from-green-400 to-blue-500 animate-orbit"></div>
@@ -28,7 +28,6 @@ export default function Vision() {
             Vision Of Meta Nodes
           </h2>
           <p className="text-gray-400 max-w-xl">
-            Our role is to listen to and deliver choice for investment.
             <br />
             <br />
             Vision of Metanodes is to listen to and deliver choice for our
