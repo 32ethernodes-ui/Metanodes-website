@@ -19,7 +19,6 @@ export default function Vision() {
 
               {/* Small Circle 2 */}
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 animate-orbit-reverse"></div>
-            </div>
           </div>
         </div>
 
