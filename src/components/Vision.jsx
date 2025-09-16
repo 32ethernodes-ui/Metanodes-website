@@ -29,7 +29,6 @@ export default function Vision() {
           </h2>
           <p className="text-gray-400 max-w-xl">
             <br />
-            <br />
             Vision of Metanodes is to listen to and deliver choice for our
             clients to choose their investment objectives, and they look to
             Metanodes to meet their needs.
