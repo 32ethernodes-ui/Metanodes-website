@@ -6,6 +6,7 @@ import './App.css'
 import Vision from './components/Vision.jsx'
 import Roadmap from './components/Roadmap.jsx'
 import Footer from './components/Footer.jsx'
+import Achieve from './components/Achieve.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Vision/>
+      <Achieve/>
       <Roadmap/>
       <Footer/>
     </>
